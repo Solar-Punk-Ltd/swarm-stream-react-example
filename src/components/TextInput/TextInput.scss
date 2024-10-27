@@ -1,0 +1,37 @@
+@use '../../styles/variables.scss' as *;
+
+.text-input-container {
+  width: 100%;
+
+  label {
+    font-size: 14px;
+  }
+}
+
+.text-input-container input {
+  transition: border-color 0.2s;
+  width: 100%;
+  height: $sp-input-height;
+  padding: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 0px;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid white;
+  color: $sp-bg-primary-100;
+  caret-color: $sp-bg-primary-100;
+  font-family: 'iaWriterQuattroV';
+}
+
+.text-input-container input:focus {
+  border: 1px solid $sp-bg-primary-100;
+}
+
+.text-inpu-container input::placeholder {
+  color: $sp-bg-primary-100;
+}
+
+.text-inpu-container input::placeholder {
+  color: #1b0900;
+}

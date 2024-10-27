@@ -1,0 +1,45 @@
+.stream {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+
+  .stream-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    min-width: 400px;
+
+    .indicator {
+      margin: auto;
+    }
+    .text-input-container {
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+    .stream-options {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    button {
+      margin-top: 20px;
+      min-width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .account {
+      display: flex;
+      white-space: pre;
+    }
+    .accountText:hover {
+      background-color: #1b090055;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+  }
+}

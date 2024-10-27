@@ -1,0 +1,13 @@
+@use '../../../styles/global.scss' as *;
+
+.video-list-item {
+  cursor: pointer;
+  height: 108px;
+  width: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  @extend .flex-center;
+  img {
+    width: 30p;
+    height: 30px;
+  }
+}

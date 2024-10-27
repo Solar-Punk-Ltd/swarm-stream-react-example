@@ -1,0 +1,9 @@
+@use '../../styles/global.scss' as *;
+
+.video-list {
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 640px;
+  padding-bottom: 50px;
+  @extend .flex-center;
+}

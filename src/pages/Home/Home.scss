@@ -1,0 +1,42 @@
+.home {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+
+  .browser-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    min-width: 400px;
+    .indicator {
+      margin: auto;
+    }
+    .text-input-container {
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+    p {
+      margin: 0;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    button {
+      margin-top: 20px;
+      min-width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .pasteIcon {
+      position: absolute;
+      right: 28px;
+      top: 73px;
+      color: #00000080;
+      cursor: pointer;
+    }
+  }
+}
