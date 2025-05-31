@@ -1,7 +1,8 @@
+import { isHexString, isPrefixedHexString } from '@solarpunkltd/swarm-stream-js';
 import { ethers } from 'ethers';
 
-import { isHexString, isPrefixedHexString } from './beeJs/hex';
-import { ADDRESS_HEX_LENGTH, BATCH_ID_HEX_LENGTH } from './beeJs/types';
+const ADDRESS_HEX_LENGTH = 64;
+const BATCH_ID_HEX_LENGTH = 64;
 
 /**
  * Verifies if the provided input is a HexString.

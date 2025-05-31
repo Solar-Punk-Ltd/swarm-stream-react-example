@@ -11,6 +11,7 @@ import { FormContainer } from '../../components/FormContainer/FormContainer';
 import { LiveIndicator } from '../../components/LiveIndicator/LiveIndicator';
 import { ControllerTextInput } from '../../components/TextInput/ControllerTextInput';
 import { WithAsyncErrorBoundary, WithErrorBoundary } from '../../hooks/WithErrorBoundary';
+import { config } from '../../utils/config';
 
 import './Stream.scss';
 
@@ -56,7 +57,7 @@ const formFields = [
   },
 ];
 
-streamBee.setBee('http://localhost:1633');
+streamBee.setBee(config.writeBeeUrl);
 
 export function Stream() {
   const { account, library } = useEthers();
@@ -75,7 +76,7 @@ export function Stream() {
   const onSubmit = WithAsyncErrorBoundary(async (data: FormData) => {
     if (!library) return;
 
-    await startStream({ address: account!, key: data.key }, data.streamTopic, data.stamp as BatchId, {
+    await startStream({ address: account!, key: data.key }, data.streamTopic, new BatchId(data.stamp), {
       audio: options.audio,
       video: options.video,
       timeslice: +data.timeslice,

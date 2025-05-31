@@ -6,12 +6,13 @@ import { PlayerContainer } from '../../components/Containers/PlayerContainer';
 import { VideoList } from '../../components/VideoList/VideoList';
 import { VideoPlayer } from '../../components/VideoPlayer/VideoPlayer';
 import { ROUTES } from '../../routes';
+import { config } from '../../utils/config';
 
 import './Watch.scss';
 
 const items = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}];
 
-playerBee.setBee('http://localhost:1633');
+playerBee.setBee(config.readBeeUrl);
 
 export function Watch() {
   const navigate = useNavigate();

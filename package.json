@@ -17,8 +17,8 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "@ethersphere/bee-js": "^8.1.0",
-    "@solarpunkltd/swarm-stream-js": "^0.0.1",
+    "@ethersphere/bee-js": "^9.0.3",
+    "@solarpunkltd/swarm-stream-js": "^0.1.0",
     "@usedapp/core": "^1.2.13",
     "clsx": "^2.1.0",
     "ethers": "^5.7.2",
